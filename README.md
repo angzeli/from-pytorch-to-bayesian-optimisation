@@ -48,7 +48,7 @@ The material is organised into Parts, each forming a coherent conceptual unit.
 │   ├── tutorial_01_gradient_as_dynamical_system.ipynb
 │   ├── tutorial_02_geometry_and_conditioning_of_optimisation.ipynb
 │   ├── tutorial_03_momentum_as_a_dynamical_system.ipynb
-│   ├── tutorial_04 #currently working
+│   ├── tutorial_04_optimisation_beyond_convexity.ipynb
 │   ├── workshop_01 #currently working
 │   └── workshop_02 #currently working
 ├── LICENSE
