@@ -44,9 +44,9 @@ Rather than directly minimising a function, we now:
 
 ### Structure (planned)
 
-- **Tutorial 1** — Why modelling? (surrogates and data efficiency)
-- **Tutorial 2** — Uncertainty and confidence
-- **Tutorial 3** — Gaussian Processes (intuition-focused)
+- **Tutorial 1** — Why modelling expensive unknown functions?
+- **Tutorial 2** — Prediction is not enough: uncertainty and confidence
+- **Tutorial 3** — Gaussian Processes as surrogate models (intuition-focused)
 
 ---
 
