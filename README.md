@@ -79,7 +79,8 @@ The material is organised into Parts, each forming a coherent conceptual unit.
 │   ├── README.md
 │   ├── tutorial_01_why_model_an_unknown_function.ipynb
 │   ├── tutorial_02_prediction_uncertainty_and_confidence.ipynb
-│   └── tutorial_03_gaussian_processes_as_surrogate_models.ipynb
+│   ├── tutorial_03_gaussian_processes_as_surrogate_models.ipynb
+│   └── tutorial_04_choosing_where_to_evaluate_next.ipynb #currently working
 ├── LICENSE
 └── README.md
 ```
