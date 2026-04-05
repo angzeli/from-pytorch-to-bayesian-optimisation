@@ -80,7 +80,19 @@ The material is organised into Parts, each forming a coherent conceptual unit.
 │   ├── tutorial_01_why_model_an_unknown_function.ipynb
 │   ├── tutorial_02_prediction_uncertainty_and_confidence.ipynb
 │   ├── tutorial_03_gaussian_processes_as_surrogate_models.ipynb
-│   └── tutorial_04_choosing_where_to_evaluate_next.ipynb 
+│   └── tutorial_04_choosing_where_to_evaluate_next.ipynb
+│   ├── workshop_01  #currently working
+│   └── workshop_02  #currently working
+├── part_3/
+│   ├── worked/
+│       └── (worked and exploratory versions)
+│   ├── README.md
+│   ├── tutorial_01_from_gaussian_processes_to_botorch_model.ipynb
+│   ├── tutorial_02_standard_acquisition_functions_in_botorch.ipynb  #currently working
+│   ├── tutorial_03_full_single_loop_bo_workflow.ipynb  #currently working
+│   └── tutorial_04_practical_modelling_choices_in_botorch.ipynb  #currently working
+│   ├── workshop_01  #currently working
+│   └── workshop_02  #currently working
 ├── LICENSE
 └── README.md
 ```
