@@ -91,8 +91,7 @@ data → model → acquisition → optimise → new data → repeat
 - **Tutorial 1** — BO intuition (exploration vs exploitation)
 - **Tutorial 2** — GP + BO loop
 - **Tutorial 3** — Acquisition optimisation
-- **Tutorial 4** — Practical BO (BoTorch)
-- **Tutorial 5** — Advanced topics (optional)
+- **Tutorial 4** — Practical BO
 
 ---
 
@@ -102,7 +101,7 @@ data → model → acquisition → optimise → new data → repeat
 
 ---
 
-# 📘 Part 5 — Advanced Bayesian Optimisation (Optional)
+# 📘 Part 5 — Advanced Bayesian Optimisation
 
 > *Goal: Extend BO to more realistic and challenging settings.*
 
