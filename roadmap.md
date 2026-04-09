@@ -1,176 +1,161 @@
-# 🧭 Roadmap: Part 3–5 and Beyond
+# 🧭 Roadmap: Part 5 and Beyond
 
-> **This section outlines the roadmap for the rest of this repository.**  
-> It provides a high-level view of what will be covered next, how the pieces connect, and where the project is heading.
+> **This section outlines the roadmap for the rest of the repository.**  
+> It gives a high-level view of what comes next, how the pieces connect, and where the project is ultimately heading.
 
----
-
-## 🎯 Overall Direction
-
-So far, we have studied **optimisation as a dynamical system** and explored how **geometry and conditioning** affect its behaviour.
-
-However, a key limitation has emerged:
-
-> **Gradient-based optimisation alone is not sufficient when the objective is complex, noisy, or expensive to evaluate.**
-
-The next parts of this repository aim to address this limitation by introducing:
-- **modelling of unknown functions**, and  
-- **decision-making under uncertainty**,  
-
-which together lead to **Bayesian Optimisation (BO)**.
-
----
-
-# 📘 Part 3 — Modelling Unknown Functions (Bridge)
-
-> *Goal: Introduce surrogate models and uncertainty as a foundation for Bayesian Optimisation.*
-
-This part serves as a **transition** from optimisation (Part 2) to BO.
-
-Rather than directly minimising a function, we now:
-> **build a model of the function and use it to guide optimisation.**
-
----
-
-### Topics covered
-
-- Why modelling is needed (expensive / noisy objectives)
-- Surrogate models and data-efficient optimisation
-- Mean vs uncertainty (variance)
-- Confidence and prediction under limited data
-- Gaussian Processes (GPs) — intuition and basic mechanics
-
----
-
-### Structure (planned)
-
-- **Tutorial 1** — Why modelling expensive unknown functions?
-- **Tutorial 2** — Prediction is not enough: uncertainty and confidence
-- **Tutorial 3** — Gaussian Processes as surrogate models (intuition-focused)
-
----
-
-### Key takeaway
-
-> **We can replace direct optimisation with model-guided decision-making.**
-
----
-
-# 📘 Part 4 — Bayesian Optimisation (Core Focus)
-
-> *Goal: Learn how to optimise expensive, unknown functions using probabilistic models.*
-
-This is the **main focus** of the repository.
-
-Bayesian Optimisation combines:
-- a **probabilistic model** (from Part 3), and  
-- an **optimisation strategy** (from Part 2),  
-
-to decide **where to evaluate next**.
-
----
-
-### Core loop
-
-data → model → acquisition → optimise → new data → repeat
-
----
-
-### Topics covered
-
-- Exploration vs exploitation
-- Acquisition functions (EI, UCB, PI)
-- Optimising acquisition functions
-- Multi-start strategies and local optimisation issues
-- Practical BO implementation (BoTorch)
-
----
-
-### Structure (planned)
-
-- **Tutorial 1** — BO intuition (exploration vs exploitation)
-- **Tutorial 2** — GP + BO loop
-- **Tutorial 3** — Acquisition optimisation
-- **Tutorial 4** — Practical BO
-
----
-
-### Key takeaway
-
-> **Optimisation becomes a sequential decision-making problem under uncertainty.**
+This repository began with the foundations of tensors, gradients, and optimisation, and then moved through Gaussian Processes and Bayesian Optimisation.  
+The next stage is to take those ideas beyond standard toy workflows and into settings that look much more like real scientific and experimental decision problems.
 
 ---
 
 # 📘 Part 5 — Advanced Bayesian Optimisation
 
-> *Goal: Extend BO to more realistic and challenging settings.*
+> **Goal: extend Bayesian Optimisation to more realistic, higher-value, and more experimentally relevant settings.**
 
-This part explores extensions used in research and real-world applications.
+So far, the repository has focused on the core BO workflow:
+
+- fit a surrogate,
+- construct an acquisition function,
+- choose the next point,
+- evaluate the objective,
+- and repeat.
+
+Part 5 asks what happens when this workflow is pushed closer to real applications, where optimisation is rarely:
+
+- one-dimensional,
+- perfectly sequential,
+- purely continuous,
+- or free of practical constraints.
+
+Instead, real BO problems often involve:
+
+- many decision variables,
+- parallel experimentation,
+- mixed continuous / discrete design spaces,
+- limited evaluation budgets,
+- and human judgement in the loop.
+
+That is the focus of Part 5.
+
+## Structure of Part 5
+
+### Tutorial 1 — Higher-dimensional custom BO for experimental design spaces
+Move from low-dimensional toy examples to genuinely higher-dimensional BO problems motivated by experimental optimisation.
+
+Examples include situations where performance depends on many controllable factors, such as:
+
+- synthesis conditions,
+- operating conditions,
+- composition variables,
+- processing parameters,
+- and other experimental degrees of freedom.
+
+This tutorial focuses on how to formulate and run BO in richer continuous design spaces.
 
 ---
 
-### Possible topics
+### Tutorial 2 — Batch BO for parallel experimentation
+Extend BO from choosing **one point at a time** to choosing **multiple points in a single iteration**.
 
-- Batch Bayesian Optimisation
-- Constraints in BO
-- High-dimensional optimisation
-- Noisy and stochastic objectives
-- Advanced acquisition strategies
+This is especially relevant when experiments or simulations can be run in parallel, for example:
+
+- multiple reactions in one batch,
+- several simulations on a compute cluster,
+- or several candidate conditions tested in the same cycle.
+
+The emphasis here is on practical batch selection and the trade-off between sequential and parallel decision-making.
 
 ---
 
-### Note
+### Tutorial 3 — Mixed-variable and constrained BO
+Introduce BO in more realistic design spaces containing:
 
-This part is **optional** and may be developed based on:
-- available time, and  
-- research relevance.
+- continuous variables,
+- integer variables,
+- categorical choices,
+- and feasibility constraints.
+
+This reflects the fact that many real optimisation problems do not live in simple unconstrained continuous domains.
+
+The tutorial focuses on how these complications change the modelling and decision process.
+
+---
+
+### Tutorial 4 — Budget-aware and human-in-the-loop BO workflows
+Study BO in settings where optimisation must respect real practical limits, such as:
+
+- a fixed experiment budget,
+- limited material or time,
+- or the need for expert filtering and scientific judgement.
+
+This tutorial emphasises that BO is often most useful not as a fully autonomous system, but as a **decision-support tool** used alongside human expertise.
 
 ---
 
 # 🚀 Beyond BO
 
-After completing Bayesian Optimisation, there are several possible directions:
+After Bayesian Optimisation, the repository can branch in more than one direction.
+
+Both directions are natural continuations, depending on whether the emphasis shifts toward **machine learning systems** or **scientific computing and communication**.
+
+## Option A — Applied Machine Learning with PyTorch
+This path moves from optimisation and modelling foundations toward broader machine learning workflows.
+
+Possible topics include:
+
+- datasets and data pipelines,
+- training loops and validation,
+- practical model development,
+- and architecture-level reasoning.
+
+This direction is a natural continuation if the project grows toward predictive modelling, representation learning, or applied machine learning more broadly.
 
 ---
 
-## Option A — Applied Machine Learning (PyTorch)
+## Option B — Scientific Visualisation and Data Analysis with matplotlib
+This path develops the communication and analysis side of scientific computing.
 
-- Datasets and data pipelines  
-- Training loops and evaluation  
-- Model architectures  
+Possible topics include:
 
----
+- publication-quality figures,
+- advanced plotting and layout techniques,
+- diagnostic visualisation,
+- and reproducible data-analysis workflows.
 
-## Option B — Scientific Visualisation (matplotlib)
-
-- Publication-quality figures  
-- Advanced plotting techniques  
-- Data analysis workflows  
-
----
-
-## Option C — Research Projects
-
-- Applying BO to real scientific problems  
-- Extending BO methods  
-- Building reusable optimisation tools  
+This direction is especially natural if the project continues to emphasise scientific interpretation, experiment analysis, and research presentation.
 
 ---
 
 # 🧠 Big Picture
 
-This repository is structured around a central progression:
-Part 2: Introduction             → How we work
-Part 2: Optimisation             → How we move
-Part 3: Modelling               → How we represent uncertainty
-Part 4: Bayesian Optimisation   → How we decide
+The repository follows a coherent progression:
+
+- **Part 1 — Foundations** → how we represent and manipulate mathematical objects  
+- **Part 2 — Optimisation** → how systems move under gradient-based updates  
+- **Part 3 — Modelling** → how we represent unknown functions and uncertainty  
+- **Part 4 — Bayesian Optimisation** → how modelling and optimisation combine into decision-making  
+- **Part 5 — Advanced Bayesian Optimisation** → how that decision-making framework is extended to realistic and practical settings  
+
+So the overall direction of the repository is not just to learn PyTorch or Bayesian Optimisation in isolation.
+
+It is to build a layered understanding of:
+
+- representation,
+- optimisation,
+- uncertainty,
+- and decision-making
+
+as connected parts of a broader scientific and computational workflow.
 
 ---
 
-## Final perspective
+## Final Perspective
 
 > **Optimisation alone is not enough.**  
-> **Modelling alone is not enough.**  
+> **Modelling alone is not enough.**
 
-It is their combination that enables:
-> **efficient decision-making in complex, real-world problems.**
+What makes Bayesian Optimisation powerful is their combination:
+
+> **using models of uncertainty to make efficient decisions under limited budgets.**
+
+That is the central idea connecting the whole repository so far — and Part 5 is where that idea begins to look much more like the real problems it was designed for.
