@@ -90,7 +90,7 @@ The material is organised into Parts, each forming a coherent conceptual unit.
 │   ├── tutorial_01_from_gaussian_processes_to_botorch_model.ipynb
 │   ├── tutorial_02_standard_acquisition_functions_in_botorch.ipynb
 │   ├── tutorial_03_full_single_loop_bo_workflow.ipynb
-│   └── tutorial_04_practical_modelling_choices_in_botorch.ipynb  #currently working
+│   └── tutorial_04_practical_modelling_choices_in_botorch.ipynb
 │   ├── workshop_01  #currently working
 │   └── workshop_02  #currently working
 ├── LICENSE
