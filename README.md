@@ -61,8 +61,6 @@ The material is organised into Parts, each forming a coherent conceptual unit.
 │   ├── tutorial_02_minimal_learning_problem.ipynb
 │   ├── tutorial_03_autograd_and_graphs.ipynb
 │   ├── tutorial_04_tensor_gradients_and_vjp.ipynb
-│   ├── workshop_01_gradient_flow_to_optimisation.ipynb
-│   └── workshop_02_objective_design_and_local_dynamics.ipynb
 ├── part_2/
 │   ├── worked/
 │       └── (worked and exploratory versions)
@@ -71,8 +69,6 @@ The material is organised into Parts, each forming a coherent conceptual unit.
 │   ├── tutorial_02_geometry_and_conditioning_of_optimisation.ipynb
 │   ├── tutorial_03_momentum_as_a_dynamical_system.ipynb
 │   ├── tutorial_04_optimisation_beyond_convexity.ipynb
-│   ├── workshop_01  #currently working
-│   └── workshop_02  #currently working
 ├── part_3/
 │   ├── worked/
 │       └── (worked and exploratory versions)
@@ -81,8 +77,6 @@ The material is organised into Parts, each forming a coherent conceptual unit.
 │   ├── tutorial_02_prediction_uncertainty_and_confidence.ipynb
 │   ├── tutorial_03_gaussian_processes_as_surrogate_models.ipynb
 │   └── tutorial_04_choosing_where_to_evaluate_next.ipynb
-│   ├── workshop_01  #currently working
-│   └── workshop_02  #currently working
 ├── part_4/ 
 │   ├── worked/
 │       └── (worked and exploratory versions)
@@ -91,8 +85,6 @@ The material is organised into Parts, each forming a coherent conceptual unit.
 │   ├── tutorial_02_standard_acquisition_functions_in_botorch.ipynb
 │   ├── tutorial_03_full_single_loop_bo_workflow.ipynb
 │   └── tutorial_04_practical_modelling_choices_in_botorch.ipynb
-│   ├── workshop_01  #currently working
-│   └── workshop_02  #currently working
 ├── part_5/ 
 │   ├── worked/
 │       └── (worked and exploratory versions)
@@ -100,9 +92,7 @@ The material is organised into Parts, each forming a coherent conceptual unit.
 │   ├── tutorial_01_higher_dimensional_custom_bo_for_experimental_design_spaces.ipynb
 │   ├── tutorial_02_batch_bo_for_parallel_experimentation.ipynb
 │   ├── tutorial_03_mixed_variable_and_constrained_bo.ipynb
-│   └── tutorial_04_budget_aware_and_human_in_the_loop_bo_workflows.ipynb #currently working
-│   ├── workshop_01  #currently working
-│   └── workshop_02  #currently working
+│   └── tutorial_04_budget_aware_and_human_in_the_loop_bo_workflows.ipynb 
 ├── LICENSE
 └── README.md
 ```
