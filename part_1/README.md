@@ -86,34 +86,6 @@ By the end of Part 1, you should be comfortable answering questions like:
 📓 `tutorial_04_tensor_gradients_and_vjp.ipynb`  
 🛠 Worked version in `worked/`
 
----
-
-### Workshop 1 — From Gradient Flow to Optimisation Intuition
-**Focus:** Interpreting gradients as structured signals.
-
-- Gradients as sensitivity measures
-- Upstream gradients as implicit objective design
-- Gradient flow through linear maps and nonlinearities (e.g. ReLU)
-- Sparsity, symmetry, and structure in gradients
-- Monte Carlo interpretation of expected gradients
-- Visual intuition for optimisation behaviour
-
-📓 `workshop_01_gradient_flow_to_optimisation.ipynb`  
-🛠 Worked version in `worked/`
-
----
-
-### Workshop 2 — Designing Objectives and Local Optimisation Dynamics
-**Focus:** How objectives shape local optimisation behaviour.
-
-- Implicit objective construction via upstream gradients
-- Structure-aware sensitivity analysis
-- Symmetry and coupling in matrix-valued objectives
-- From gradient structure to a single update step
-- Bridging gradient analysis to optimisation dynamics
-
-📓 `workshop_02_objective_design_and_local_dynamics.ipynb`  
-🛠 Worked version in `worked/`
 
 ---
 
