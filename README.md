@@ -205,5 +205,3 @@ A background in linear algebra and basic calculus is assumed, but no prior deep-
 **Author**: Angze Li
 
 **Status**: Actively developed
-
-**Last updated**: 2026-03-31
