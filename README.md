@@ -88,7 +88,14 @@ The material is organised into Parts, each forming a coherent conceptual unit.
 │   ├── tutorial_01_higher_dimensional_custom_bo_for_experimental_design_spaces.ipynb
 │   ├── tutorial_02_batch_bo_for_parallel_experimentation.ipynb
 │   ├── tutorial_03_mixed_variable_and_constrained_bo.ipynb
-│   └── tutorial_04_budget_aware_and_human_in_the_loop_bo_workflows.ipynb 
+│   └── tutorial_04_budget_aware_and_human_in_the_loop_bo_workflows.ipynb
+├── part_6/ 
+│   ├── worked/ #(worked and exploratory versions)
+│   ├── README.md
+│   ├── tutorial_01_noisy_and_replication_aware_bo.ipynb
+│   ├── tutorial_02_multi_objective_bo.ipynb #currently working
+│   ├── tutorial_03_multi_fidelity_and_contextual_bo.ipynb #currently working
+│   └── tutorial_04_combinatorial_and_structured_bo.ipynb #currently working
 ├── LICENSE
 └── README.md
 ```
