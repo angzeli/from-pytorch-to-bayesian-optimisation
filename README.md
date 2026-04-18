@@ -182,6 +182,26 @@ Its purpose is to make the transition from theory to implementation clear and in
 
 ---
 
+## 📘 Part 5 — Advanced Bayesian Optimisation Workflows
+
+Part 5 extends the standard BoTorch workflows from Part 4 into more realistic experimental optimisation settings.
+
+It covers:
+- higher-dimensional BO for experimental design spaces,
+- batch BO for parallel experimentation,
+- mixed-variable and constrained BO,
+- decode–repair–evaluate workflows,
+- budget-aware BO under unequal experiment costs,
+- and human-in-the-loop BO with simple decision rules.
+
+Part 5 focuses on the idea that practical BO is not only about maximising an acquisition function. In realistic workflows, candidate selection may also depend on feasibility, cost, budget, and human judgement.
+
+This part therefore bridges standard single-loop BO and more realistic scientific optimisation campaigns.
+
+📂 See `part_5/README.md` for full details.
+
+---
+
 ## 🧪 Fresh vs Worked Notebooks
 
 For most notebooks, two versions exist:
