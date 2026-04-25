@@ -93,8 +93,8 @@ The material is organised into Parts, each forming a coherent conceptual unit.
 │   ├── worked/ #(worked and exploratory versions)
 │   ├── README.md
 │   ├── tutorial_01_noisy_and_replication_aware_bo.ipynb
-│   ├── tutorial_02_multi_objective_bo.ipynb
-│   ├── tutorial_03_multi_fidelity_and_contextual_bo.ipynb #currently working
+│   ├── tutorial_02_multi_objective_bo_and_pareto_optimal_dicision_making.ipynb
+│   ├── tutorial_03_multi_fidelity_and_contextual_bo.ipynb 
 │   └── tutorial_04_combinatorial_and_structured_bo.ipynb #currently working
 ├── LICENSE
 └── README.md
