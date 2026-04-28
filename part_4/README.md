@@ -145,5 +145,4 @@ This part intentionally stays within **standard single-loop Bayesian Optimisatio
 ---
 
 **Author:** Angze Li  
-**Last updated:** 2026-04-08 
 **Version:** v1.0
