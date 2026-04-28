@@ -145,6 +145,5 @@ This is what makes later topics — such as gradient descent, optimisation dynam
 
 ---
 
-**Author:** Angze Li  
-**Last updated:** 2026-04-14  
+**Author:** Angze Li
 **Version:** v2.0
