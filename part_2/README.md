@@ -158,6 +158,5 @@ That is where the series transitions from optimisation dynamics to **modelling u
 
 ---
 
-**Author:** Angze Li  
-**Last updated:** 2026-04-05  
+**Author:** Angze Li 
 **Version:** v1.0
