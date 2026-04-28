@@ -167,6 +167,5 @@ This part intentionally develops the ideas from the ground up before introducing
 
 ---
 
-**Author:** Angze Li  
-**Last updated:** 2026-04-05  
+**Author:** Angze Li   
 **Version:** v1.0
