@@ -1,4 +1,4 @@
-# 📘 Part 6 — Advanced Bayesian Optimisation Workflows
+# 📘 Part 6 — Advanced Bayesian Optimisation Workflow Extensions
 
 Part 6 takes the realism-oriented workflows of Part 5 and pushes them into settings where the optimiser must reason about **richer structure in the problem itself**.
 
